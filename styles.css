@@ -1,0 +1,246 @@
+/* Style général */
+#principal{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, serif;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(IMAGES/L_ile_de_Saint-Louis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: transparent;
+    padding: 20px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.logo img{
+    width: 100px;
+}
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}nav li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #01558D;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    text-decoration: none;
+}
+header #entete nav ul li a:hover{
+    background: #01558D;
+    color: white;
+}
+header #entete nav ul .active a{
+    background: #01558D;
+    color: white;
+}
+
+  /* Style du contenu principal */
+main {
+    text-align: center;
+    padding: 30px;
+}
+main .title h1{
+    color: #01558D;
+    font-family:century;
+    font-size:60px;
+}
+main #contenu .text p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color:#F5F5DC;
+    text-align: justify;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #01558D;
+
+    
+    padding: 20px;
+    text-align: center;
+}
+
+ /* Style pour la section "L'île de Saint Louis" */
+#principal1{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(IMAGES/Rue_ville_.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.slider1{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slides1{
+    width: calc(500px*8);
+    animation: swipe1 70s infinite;
+}
+.slide1{
+   float: left; 
+}
+@keyframes swipe1 {
+    0%{
+        transform: translateX(0);
+    }
+    14%{
+        transform: translateX(-500px);
+    }
+    29%{
+        transform: translateX(-1000px);
+    }
+    43%{
+        transform: translateX(-1500px);
+    }
+    57%{
+        transform: translateX(-2000px);
+    }
+    72%{
+        transform: translateX(-2500px);
+    }
+    86%{
+        transform: translateX(-3000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+/* Style pour la section "Le Pont Faidherbe" */
+#principal2{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(IMAGES/Pont_Faidherbe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.slider2{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slides2{
+    width: calc(500px*3);
+    animation: swipe2 25S infinite;
+}
+.slide2{
+   float: left; 
+}
+@keyframes swipe2 {
+    0%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-500px);
+    }
+    66%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/* Style pour la section "La Cathédrale de Saint Louis"*/
+#principal3{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(IMAGES/Cathedrale_de_Saint-Louis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.slider3{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slides3{
+    width: calc(500px*4);
+    animation: swipe3 25S infinite;
+}
+.slide3{
+   float: left; 
+}
+@keyframes swipe3 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-500px);
+    }
+    50%{
+        transform: translateX(-1000px);
+    }
+    75%{
+        transform: translateX(-1500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/* Style pour la section "Le Parc national de la Langue de Barbarie" */
+#principal4{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(IMAGES/langue-de-barbarie-aigrettes.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.slider4{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slides4{
+    width: calc(500px*4);
+    animation: swipe4 25S infinite;
+}
+.slide4{
+   float: left; 
+}
+@keyframes swipe4 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-500px);
+    }
+    50%{
+        transform: translateX(-1000px);
+    }
+    75%{
+        transform: translateX(-1500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
